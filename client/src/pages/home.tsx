@@ -3,6 +3,7 @@ import { Download } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { languages } from '@/lib/translations';
+import appIcon from '@/assets/app-icon.svg';
 
 export default function Home() {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
@@ -48,11 +49,12 @@ export default function Home() {
           
           {/* App Icon */}
           <div className="mb-6 flex justify-center">
-            <div className="breathe-icon w-20 h-20 rounded-xl flex items-center justify-center">
-              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C12 2 8 4 8 8C8 10 9 11 10 12C9 13 8 14 8 16C8 20 12 22 12 22C12 22 16 20 16 16C16 14 15 13 14 12C15 11 16 10 16 8C16 4 12 2 12 2Z" opacity="0.8"/>
-                <circle cx="12" cy="12" r="2" fill="white"/>
-              </svg>
+            <div className="w-20 h-20 rounded-xl overflow-hidden shadow-2xl">
+              <img 
+                src={appIcon} 
+                alt="BreatheBook App Icon" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
