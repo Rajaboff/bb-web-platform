@@ -1,50 +1,7 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle with Gradient -->
-  <defs>
-    <radialGradient id="bgGradient" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" style="stop-color:#ff007f;stop-opacity:0.8" />
-      <stop offset="50%" style="stop-color:#9333ea;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:0.9" />
-    </radialGradient>
-    <linearGradient id="breatheGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:0.95" />
-      <stop offset="50%" style="stop-color:#f9a8d4;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.9" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <!-- Background Circle -->
-  <circle cx="60" cy="60" r="56" fill="url(#bgGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  
-  <!-- Breathing Symbol - Lotus-like pattern -->
-  <g transform="translate(60,60)" filter="url(#glow)">
-    <!-- Center circle representing the core breath -->
-    <circle cx="0" cy="0" r="8" fill="url(#breatheGradient)" opacity="0.9"/>
-    
-    <!-- Petal-like shapes representing breath flow -->
-    <path d="M 0,-25 Q -15,-15 0,-8 Q 15,-15 0,-25" fill="url(#breatheGradient)" opacity="0.7"/>
-    <path d="M 25,0 Q 15,-15 8,0 Q 15,15 25,0" fill="url(#breatheGradient)" opacity="0.7"/>
-    <path d="M 0,25 Q 15,15 0,8 Q -15,15 0,25" fill="url(#breatheGradient)" opacity="0.7"/>
-    <path d="M -25,0 Q -15,15 -8,0 Q -15,-15 -25,0" fill="url(#breatheGradient)" opacity="0.7"/>
-    
-    <!-- Diagonal petals -->
-    <path d="M 18,-18 Q 5,-25 -2,-8 Q 5,5 18,-18" fill="url(#breatheGradient)" opacity="0.5"/>
-    <path d="M 18,18 Q 25,5 8,2 Q -5,5 18,18" fill="url(#breatheGradient)" opacity="0.5"/>
-    <path d="M -18,18 Q -5,25 2,8 Q -5,-5 -18,18" fill="url(#breatheGradient)" opacity="0.5"/>
-    <path d="M -18,-18 Q -25,-5 -8,-2 Q 5,-5 -18,-18" fill="url(#breatheGradient)" opacity="0.5"/>
-    
-    <!-- Inner glow rings -->
-    <circle cx="0" cy="0" r="15" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" opacity="0.6"/>
-    <circle cx="0" cy="0" r="22" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" opacity="0.4"/>
-  </g>
-  
-  <!-- Subtle outer ring -->
-  <circle cx="60" cy="60" r="56" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="black"/>
+<path d="M209 190C209 159.624 233.624 135 264 135V135C294.376 135 319 159.624 319 190V376H209V190Z" fill="white"/>
+<path d="M269.654 230.826H339.533C379.583 230.826 412.049 263.293 412.049 303.342V303.342C412.049 343.392 379.583 375.858 339.533 375.858H269.654V230.826Z" fill="white"/>
+<rect x="99" y="135" width="110" height="241" rx="55" fill="#F19FE3"/>
+<path d="M159.41 230.826H229.289C269.339 230.826 301.805 263.293 301.805 303.342V303.342C301.805 343.392 269.339 375.858 229.289 375.858H159.41V230.826Z" fill="#F19FE3"/>
 </svg>

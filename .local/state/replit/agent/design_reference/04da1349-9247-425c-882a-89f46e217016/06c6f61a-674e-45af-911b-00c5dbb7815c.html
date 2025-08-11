@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreatheBook - Mindful Breathing App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'fadeIn': 'fadeIn 0.5s ease-out',
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glass-button {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-button:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .language-dropdown {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .breathe-icon {
+            background: linear-gradient(135deg, #3B82F6, #60A5FA);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body class="font-inter bg-black min-h-screen overflow-x-hidden">
+    <!-- Background Pattern -->
+    <div class="fixed inset-0 opacity-5">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #3B82F6 0%, transparent 50%), radial-gradient(circle at 75% 75%, #60A5FA 0%, transparent 50%);"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="relative min-h-screen flex flex-col items-center justify-center px-4 py-8">
+        
+        <!-- Language Selector -->
+        <!-- @COMPONENT: LanguageSelector [selectedLanguage, onLanguageChange] -->
+        <div class="absolute top-6 right-6 z-20">
+            <div class="relative">
+                <button id="languageButton" class="glass-button rounded-xl px-4 py-2 text-white text-sm font-medium flex items-center space-x-2 hover:scale-105 transition-all duration-300">
+                    <span id="selectedFlag">🇺🇸</span>
+                    <span id="selectedLang" data-bind="currentLanguage.code">EN</span>
+                    <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                
+                <div id="languageDropdown" class="absolute top-full right-0 mt-2 w-40 language-dropdown rounded-xl shadow-xl opacity-0 invisible transition-all duration-300 transform scale-95">
+                    <!-- @MAP: supportedLanguages.map(lang => ( -->
+                    <button data-lang="en" data-flag="🇺🇸" class="language-option w-full text-left px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200 first:rounded-t-xl">
+                        <span>🇺🇸</span><span>English</span>
+                    </button>
+                    <button data-lang="ru" data-flag="🇷🇺" class="language-option w-full text-left px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200">
+                        <span>🇷🇺</span><span>Русский</span>
+                    </button>
+                    <button data-lang="es" data-flag="🇪🇸" class="language-option w-full text-left px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200">
+                        <span>🇪🇸</span><span>Español</span>
+                    </button>
+                    <button data-lang="fr" data-flag="🇫🇷" class="language-option w-full text-left px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200 last:rounded-b-xl">
+                        <span>🇫🇷</span><span>Français</span>
+                    </button>
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: LanguageSelector -->
+
+        <!-- Main Content Card -->
+        <!-- @COMPONENT: MainCard [appData, onPrivacyOpen] -->
+        <div class="glass-effect rounded-3xl p-8 md:p-12 max-w-md w-full text-center animate-float">
+            
+            <!-- App Icon -->
+            <div class="mb-8 flex justify-center">
+                <div class="breathe-icon w-24 h-24 rounded-2xl flex items-center justify-center shadow-2xl">
+                    <!-- BreatheBook app icon - breathing/meditation themed -->
+                    <!-- Stylized breathing icon with modern design -->
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C12 2 8 4 8 8C8 10 9 11 10 12C9 13 8 14 8 16C8 20 12 22 12 22C12 22 16 20 16 16C16 14 15 13 14 12C15 11 16 10 16 8C16 4 12 2 12 2Z" opacity="0.7"/>
+                        <circle cx="12" cy="12" r="2" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- App Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                <span data-bind="appName">BreatheBook</span>
+            </h1>
+
+            <!-- App Subtitle -->
+            <p id="appSubtitle" class="text-lg text-gray-300 mb-8 leading-relaxed" data-bind="appDescription">
+                Mindful breathing exercises for inner peace and mental clarity
+            </p>
+
+            <!-- Privacy Policy Button -->
+            <button id="privacyButton" class="glass-button rounded-2xl px-8 py-4 text-white font-medium hover:scale-105 transition-all duration-300 shadow-lg">
+                <span id="privacyButtonText" data-bind="privacyButtonLabel">Privacy Policy</span>
+            </button>
+
+        </div>
+        <!-- @END_COMPONENT: MainCard -->
+
+        <!-- Footer -->
+        <div class="mt-8 text-center">
+            <p class="text-gray-500 text-sm">
+                <span id="footerText" data-bind="footerCopyright">© 2024 BreatheBook. All rights reserved.</span>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <!-- @COMPONENT: PrivacyModal [isOpen, onClose, content] -->
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 invisible transition-all duration-300 z-50">
+        <div class="glass-effect rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden">
+            
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-white border-opacity-20">
+                <div class="flex items-center justify-between">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-white" data-bind="privacyTitle">Privacy Policy</h3>
+                    <button id="closeModal" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6 overflow-y-auto max-h-96">
+                <div id="privacyContent" class="text-gray-300 leading-relaxed space-y-4" data-bind="privacyContent">
+                    <!-- Dynamic content will be loaded here based on selected language -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- @END_COMPONENT: PrivacyModal -->
+
+    <script>
+        // TODO: Implement proper state management with React
+        (function() {
+            // Language data
+            const languages = {
+                en: {
+                    code: 'EN',
+                    flag: '🇺🇸',
+                    appDescription: 'Mindful breathing exercises for inner peace and mental clarity',
+                    privacyButtonLabel: 'Privacy Policy',
+                    privacyTitle: 'Privacy Policy',
+                    footerCopyright: '© 2024 BreatheBook. All rights reserved.',
+                    privacyContent: `
+                        <h4 class="text-lg font-semibold text-white mb-3">Information We Collect</h4>
+                        <p>BreatheBook collects minimal data to provide you with the best meditation experience. We may collect usage statistics to improve our app functionality.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">How We Use Your Information</h4>
+                        <p>Your personal information is used solely to enhance your breathing exercise experience. We do not sell or share your data with third parties.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Data Security</h4>
+                        <p>We implement industry-standard security measures to protect your information. All data is encrypted and stored securely.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Contact Us</h4>
+                        <p>If you have any questions about this privacy policy, please contact us at privacy@breathebook.app</p>
+                    `
+                },
+                ru: {
+                    code: 'RU',
+                    flag: '🇷🇺', 
+                    appDescription: 'Осознанные дыхательные упражнения для внутреннего покоя и ясности ума',
+                    privacyButtonLabel: 'Политика конфиденциальности',
+                    privacyTitle: 'Политика конфиденциальности',
+                    footerCopyright: '© 2024 BreatheBook. Все права защищены.',
+                    privacyContent: `
+                        <h4 class="text-lg font-semibold text-white mb-3">Информация, которую мы собираем</h4>
+                        <p>BreatheBook собирает минимальные данные для предоставления вам лучшего опыта медитации. Мы можем собирать статистику использования для улучшения функциональности приложения.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Как мы используем вашу информацию</h4>
+                        <p>Ваша личная информация используется исключительно для улучшения вашего опыта дыхательных упражнений. Мы не продаем и не передаем ваши данные третьим лицам.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Безопасность данных</h4>
+                        <p>Мы применяем стандартные отраслевые меры безопасности для защиты вашей информации. Все данные шифруются и хранятся в безопасности.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Связаться с нами</h4>
+                        <p>Если у вас есть вопросы об этой политике конфиденциальности, пожалуйста, свяжитесь с нами по адресу privacy@breathebook.app</p>
+                    `
+                },
+                es: {
+                    code: 'ES',
+                    flag: '🇪🇸',
+                    appDescription: 'Ejercicios de respiración consciente para la paz interior y claridad mental',
+                    privacyButtonLabel: 'Política de Privacidad',
+                    privacyTitle: 'Política de Privacidad',
+                    footerCopyright: '© 2024 BreatheBook. Todos los derechos reservados.',
+                    privacyContent: `
+                        <h4 class="text-lg font-semibold text-white mb-3">Información que Recopilamos</h4>
+                        <p>BreatheBook recopila datos mínimos para brindarte la mejor experiencia de meditación. Podemos recopilar estadísticas de uso para mejorar la funcionalidad de nuestra aplicación.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Cómo Usamos tu Información</h4>
+                        <p>Tu información personal se utiliza únicamente para mejorar tu experiencia de ejercicios de respiración. No vendemos ni compartimos tus datos con terceros.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Seguridad de Datos</h4>
+                        <p>Implementamos medidas de seguridad estándar de la industria para proteger tu información. Todos los datos están cifrados y almacenados de forma segura.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Contáctanos</h4>
+                        <p>Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos en privacy@breathebook.app</p>
+                    `
+                },
+                fr: {
+                    code: 'FR',
+                    flag: '🇫🇷',
+                    appDescription: 'Exercices de respiration consciente pour la paix intérieure et la clarté mentale',
+                    privacyButtonLabel: 'Politique de Confidentialité',
+                    privacyTitle: 'Politique de Confidentialité',
+                    footerCopyright: '© 2024 BreatheBook. Tous droits réservés.',
+                    privacyContent: `
+                        <h4 class="text-lg font-semibold text-white mb-3">Informations que Nous Collectons</h4>
+                        <p>BreatheBook collecte des données minimales pour vous offrir la meilleure expérience de méditation. Nous pouvons collecter des statistiques d'utilisation pour améliorer les fonctionnalités de notre application.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Comment Nous Utilisons Vos Informations</h4>
+                        <p>Vos informations personnelles sont utilisées uniquement pour améliorer votre expérience d'exercices de respiration. Nous ne vendons ni ne partageons vos données avec des tiers.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Sécurité des Données</h4>
+                        <p>Nous mettons en œuvre des mesures de sécurité standard de l'industrie pour protéger vos informations. Toutes les données sont chiffrées et stockées en sécurité.</p>
+                        
+                        <h4 class="text-lg font-semibold text-white mb-3 mt-6">Nous Contacter</h4>
+                        <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à privacy@breathebook.app</p>
+                    `
+                }
+            };
+
+            let currentLanguage = 'en';
+
+            // DOM elements
+            const languageButton = document.getElementById('languageButton');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const selectedFlag = document.getElementById('selectedFlag');
+            const selectedLang = document.getElementById('selectedLang');
+            const privacyButton = document.getElementById('privacyButton');
+            const privacyModal = document.getElementById('privacyModal');
+            const closeModal = document.getElementById('closeModal');
+
+            // Language dropdown toggle
+            languageButton.addEventListener('click', () => {
+                const isVisible = !languageDropdown.classList.contains('opacity-0');
+                
+                if (isVisible) {
+                    languageDropdown.classList.add('opacity-0', 'invisible', 'scale-95');
+                    languageDropdown.classList.remove('opacity-100', 'visible', 'scale-100');
+                } else {
+                    languageDropdown.classList.remove('opacity-0', 'invisible', 'scale-95');
+                    languageDropdown.classList.add('opacity-100', 'visible', 'scale-100');
+                }
+            });
+
+            // Language selection
+            document.querySelectorAll('.language-option').forEach(option => {
+                option.addEventListener('click', () => {
+                    const lang = option.getAttribute('data-lang');
+                    const flag = option.getAttribute('data-flag');
+                    
+                    currentLanguage = lang;
+                    selectedFlag.textContent = flag;
+                    selectedLang.textContent = languages[lang].code;
+                    
+                    updateContent(lang);
+                    
+                    // Close dropdown
+                    languageDropdown.classList.add('opacity-0', 'invisible', 'scale-95');
+                    languageDropdown.classList.remove('opacity-100', 'visible', 'scale-100');
+                });
+            });
+
+            // Update content based on language
+            function updateContent(lang) {
+                const langData = languages[lang];
+                
+                document.getElementById('appSubtitle').textContent = langData.appDescription;
+                document.getElementById('privacyButtonText').textContent = langData.privacyButtonLabel;
+                document.getElementById('modalTitle').textContent = langData.privacyTitle;
+                document.getElementById('footerText').textContent = langData.footerCopyright;
+                document.getElementById('privacyContent').innerHTML = langData.privacyContent;
+            }
+
+            // Privacy modal
+            privacyButton.addEventListener('click', () => {
+                privacyModal.classList.remove('opacity-0', 'invisible');
+                privacyModal.classList.add('opacity-100', 'visible');
+            });
+
+            closeModal.addEventListener('click', () => {
+                privacyModal.classList.add('opacity-0', 'invisible');
+                privacyModal.classList.remove('opacity-100', 'visible');
+            });
+
+            // Close modal on background click
+            privacyModal.addEventListener('click', (e) => {
+                if (e.target === privacyModal) {
+                    privacyModal.classList.add('opacity-0', 'invisible');
+                    privacyModal.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!languageButton.contains(e.target) && !languageDropdown.contains(e.target)) {
+                    languageDropdown.classList.add('opacity-0', 'invisible', 'scale-95');
+                    languageDropdown.classList.remove('opacity-100', 'visible', 'scale-100');
+                }
+            });
+
+            // Initialize with default language
+            updateContent(currentLanguage);
+        })();
+    </script>
+</body>
+</html>

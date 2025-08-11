@@ -25,7 +25,7 @@ export const languages: Record<string, Language> = {
     termsButtonLabel: "Terms of Use",
     termsTitle: "Terms of Use",
     downloadButtonLabel: "Download from App Store",
-    footerCopyright: "© 2024 BreatheBook. All rights reserved.",
+    footerCopyright: "© 2025 BreatheBook. All rights reserved.",
     privacyContent: `
       <p class="mb-4">Your trust is important to us, and we strive to ensure your privacy. Our application operates entirely locally on your device and does not collect, store, or transmit any user data to servers or third parties.</p>
       <p class="mb-4">We do not use third-party services for analytics or tracking your activity. All data that you enter or create in the application remains exclusively on your device.</p>
@@ -70,7 +70,7 @@ If you have any questions, please contact us through the support section in the 
     termsButtonLabel: "Условия использования",
     termsTitle: "Условия использования",
     downloadButtonLabel: "Скачать из App Store",
-    footerCopyright: "© 2024 BreatheBook. Все права защищены.",
+    footerCopyright: "© 2025 BreatheBook. Все права защищены.",
     privacyContent: `
       <p class="mb-4">Ваше доверие важно для нас, и мы стремимся обеспечить вашу конфиденциальность. Наше приложение работает полностью локально на вашем устройстве и не собирает, не хранит и не передает никакие данные пользователя на серверы или третьим лицам.</p>
       <p class="mb-4">Мы не используем сторонние сервисы для анализа или отслеживания вашей активности. Все данные, которые вы вводите или создаете в приложении, остаются исключительно на вашем устройстве.</p>
@@ -114,7 +114,7 @@ If you have any questions, please contact us through the support section in the 
     termsButtonLabel: "Términos de Uso",
     termsTitle: "Términos de Uso",
     downloadButtonLabel: "Descargar de App Store",
-    footerCopyright: "© 2024 BreatheBook. Todos los derechos reservados.",
+    footerCopyright: "© 2025 BreatheBook. Todos los derechos reservados.",
     privacyContent: `
       <p class="mb-4">Su confianza es importante para nosotros, y nos esforzamos por garantizar su privacidad. Nuestra aplicación funciona completamente de manera local en su dispositivo y no recopila, almacena ni transmite ningún dato del usuario a servidores o terceros.</p>
       <p class="mb-4">No utilizamos servicios externos para analizar o rastrear su actividad. Todos los datos que ingrese o cree en la aplicación permanecen exclusivamente en su dispositivo.</p>
@@ -158,7 +158,7 @@ Si tiene alguna pregunta, por favor contáctenos a través de la sección de sop
     termsButtonLabel: "Conditions d'Utilisation",
     termsTitle: "Conditions d'Utilisation",
     downloadButtonLabel: "Télécharger sur App Store",
-    footerCopyright: "© 2024 BreatheBook. Tous droits réservés.",
+    footerCopyright: "© 2025 BreatheBook. Tous droits réservés.",
     privacyContent: `
       <p class="mb-4">Votre confiance est importante pour nous, et nous nous efforçons de garantir votre confidentialité. Notre application fonctionne entièrement localement sur votre appareil et ne collecte, ne stocke et ne transmet aucune donnée utilisateur à des serveurs ou à des tiers.</p>
       <p class="mb-4">Nous n'utilisons pas de services tiers pour analyser ou suivre votre activité. Toutes les données que vous saisissez ou créez dans l'application restent exclusivement sur votre appareil.</p>
@@ -172,7 +172,7 @@ Si tiene alguna pregunta, por favor contáctenos a través de la sección de sop
 Nous offrons une période d'essai gratuite de 7 jours. Pendant cette période, vous pouvez utiliser toutes les fonctionnalités de l'application sans aucune restriction.</p>
 
 <p class="mb-4"><strong>2. Abonnement automatique :</strong><br>
-Après la fin de la période d'essai gratuite, votre abonnement sera automatiquement renouvelé pour une durée d'un an avec un paiement de 69,99$.<br>
+Après la fin de la période d'essai gratuite, votre abonnement sera automatiquement renouvelé pour une durée d'un an avec un paiement de 39,99$.<br>
 Le paiement sera débité de votre compte Apple ID après confirmation de l'achat.</p>
 
 <p class="mb-4"><strong>3. Gestion de l'abonnement :</strong><br>
@@ -202,7 +202,7 @@ Si vous avez des questions, veuillez nous contacter via la section support de l'
     termsButtonLabel: "Nutzungsbedingungen",
     termsTitle: "Nutzungsbedingungen",
     downloadButtonLabel: "Aus App Store herunterladen",
-    footerCopyright: "© 2024 BreatheBook. Alle Rechte vorbehalten.",
+    footerCopyright: "© 2025 BreatheBook. Alle Rechte vorbehalten.",
     privacyContent: `
       <p class="mb-4">Ihr Vertrauen ist uns wichtig, und wir setzen uns dafür ein, Ihre Privatsphäre zu schützen. Unsere App funktioniert vollständig lokal auf Ihrem Gerät und sammelt, speichert oder überträgt keine Benutzerdaten an Server oder Dritte.</p>
       <p class="mb-4">Wir verwenden keine Drittanbieterdienste zur Analyse oder Verfolgung Ihrer Aktivitäten. Alle Daten, die Sie in der App eingeben oder erstellen, verbleiben ausschließlich auf Ihrem Gerät.</p>
@@ -216,7 +216,7 @@ Si vous avez des questions, veuillez nous contacter via la section support de l'
 Wir bieten eine kostenlose Testphase von 7 Tagen an. Während dieser Zeit können Sie alle Funktionen der App uneingeschränkt nutzen.</p>
 
 <p class="mb-4"><strong>2. Automatisches Abonnement:</strong><br>
-Nach Ablauf der kostenlosen Testphase wird Ihr Abonnement automatisch um ein Jahr verlängert, mit einer Gebühr von 69,99$.<br>
+Nach Ablauf der kostenlosen Testphase wird Ihr Abonnement automatisch um ein Jahr verlängert, mit einer Gebühr von 39,99$.<br>
 Die Zahlung wird nach Bestätigung des Kaufs von Ihrem Apple-ID-Konto abgebucht.</p>
 
 <p class="mb-4"><strong>3. Abonnementverwaltung:</strong><br>
@@ -245,7 +245,7 @@ Wenn Sie Fragen haben, kontaktieren Sie uns bitte über den Support-Bereich in d
     termsButtonLabel: "利用規約",
     termsTitle: "利用規約",
     downloadButtonLabel: "App Storeからダウンロード",
-    footerCopyright: "© 2024 BreatheBook. 無断転載禁止。",
+    footerCopyright: "© 2025 BreatheBook. 無断転載禁止。",
     privacyContent: `
       <p class="mb-4">私たちはお客様の信頼を大切にしており、プライバシーの保護に努めています。当アプリは完全にお客様のデバイス上でローカルに動作し、ユーザーデータを収集、保存、またはサーバーや第三者に送信することはありません。</p>
       <p class="mb-4">また、当アプリでは、活動の分析や追跡のために外部サービスを使用ؿ���ることはありません。アプリ内で入力または作成されたすべてのデータは、お客様のデバイス内にのみ保存されます。</p>
@@ -288,7 +288,7 @@ Apple IDアカウント設定でサブスクリプションを管理し、自動
     termsButtonLabel: "使用条款",
     termsTitle: "使用条款",
     downloadButtonLabel: "从App Store下载",
-    footerCopyright: "© 2024 BreatheBook. 保留所有权利。",
+    footerCopyright: "© 2025 BreatheBook. 保留所有权利。",
     privacyContent: `
       <p class="mb-4">您的信任对我们非常重要，我们致力于保护您的隐私。我们的应用程序完全在您的设备上本地运行，不会收集、存储或传输任何用户数据到服务器或第三方。</p>
       <p class="mb-4">我们不使用第三方服务来分析或跟踪您的活动。您在应用程序中输入或创建的所有数据都���保留在您的设备上。</p>
@@ -331,7 +331,7 @@ Apple IDアカウント設定でサブスクリプションを管理し、自動
     termsButtonLabel: "이용 약관",
     termsTitle: "이용 약관",
     downloadButtonLabel: "App Store에서 다운로드",
-    footerCopyright: "© 2024 BreatheBook. 모든 권리 보유.",
+    footerCopyright: "© 2025 BreatheBook. 모든 권리 보유.",
     privacyContent: `
       <p class="mb-4">저희는 여러분의 신뢰를 중요하게 생각하며, 여러분의 개인정보를 보호하기 위해 최선을 다하고 있습니다. 저희 애플리케이션은 완전히 로컬로 여러분의 기기에서 작동하며, 사용자 데이터를 서버나 제3자에게 수집, 저장 또는 전송하지 않습니다.</p>
       <p class="mb-4">저희는 여러분의 활동을 분석하거나 추적하기 위해 타사 서비스를 사용하지 않습니다. 애플리케이션에 입력하거나 생성하는 모든 데이터는 오직 여러분의 기기에만 저장됩니다.</p>
@@ -374,7 +374,7 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
     termsButtonLabel: "شروط الاستخدام",
     termsTitle: "شروط الاستخدام",
     downloadButtonLabel: "تحميل من App Store",
-    footerCopyright: "© 2024 BreatheBook. جميع الحقوق محفوظة.",
+    footerCopyright: "© 2025 BreatheBook. جميع الحقوق محفوظة.",
     privacyContent: `
       <p class="mb-4" dir="rtl">ثقتكم مهمة بالنسبة لنا، ونحن نسعى لضمان خصوصيتكم. يعمل تطبيقنا بشكل كامل محليًا على جهازكم ولا يجمع أو يخزن أو ينقل أي بيانات مستخدم إلى الخوادم أو إلى أطراف o�الثة.</p>
       <p class="mb-4" dir="rtl">نحن لا نستخدم خدمات خارجية لتحليل أو تتبع نشاطكم. جميع البيانات التي تدخلونها أو تنشئونها في التطبيق تبقى حصريًا على جهازكم.</p>
@@ -419,7 +419,7 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
     termsButtonLabel: "उपयोग की शर्तें",
     termsTitle: "उपयोग की शर्तें",
     downloadButtonLabel: "App Store से डाउनलोड करें",
-    footerCopyright: "© 2024 BreatheBook. सभी अधिकार सुरक्षित।",
+    footerCopyright: "© 2025 BreatheBook. सभी अधिकार सुरक्षित।",
     privacyContent: `
       <p class="mb-4">आपका विश्वास हमारे लिए महत्वपूर्ण है, और हम आपकी गोपनीयता सुनिश्चित करने के लिए प्रतिबद्ध हैं। हमारा ऐप पूरी तरह से आपके डिवाइस पर स्थानीय रूप से काम करता है और उपयोगकर्ता डेटा को सर्वर या तीसरे पक्ष को इकट्ठा, संग्रहीत या स ��थानांतरित नहीं करता है।</p>
       <p class="mb-4">हम आपकी गतिविधि का विश्लेषण या ट्रैक करने के लिए किसी तृतीय-पक्ष सेवा का उपयोग नहीं करते हैं। ऐप में आप जो भी डेटा दर्ज करते हैं या बनाते हैं, वह केवल आपके डिवाइस पर ही रहता है।</p>
@@ -462,7 +462,7 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
     termsButtonLabel: "Brugsvilkår",
     termsTitle: "Brugsvilkår",
     downloadButtonLabel: "Download fra App Store",
-    footerCopyright: "© 2024 BreatheBook. Alle rettigheder forbeholdes.",
+    footerCopyright: "© 2025 BreatheBook. Alle rettigheder forbeholdes.",
     privacyContent: `
       <p class="mb-4">Din tillid er vigtig for os, og vi stræber efter at sikre din fortrolighed. Vores app fungerer helt lokalt på din enhed og indsamler, gemmer eller overfører ingen brugerdata til servere eller tredjeparter.</p>
       <p class="mb-4">Vi bruger ikke tredjepartstjenester til analyse eller sporing af din aktivitet. Alle data, som du indtaster eller opretter i appen, forbliver udelukkende på din enhed.</p>
@@ -476,7 +476,7 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
 Vi tilbyder en gratis prøveperiode på 7 dage. I denne periode kan du bruge alle appens funktioner uden begrænsninger.</p>
 
 <p class="mb-4"><strong>2. Automatisk abonnement:</strong><br>
-Efter afslutningen af den gratis prøveperiode vil dit abonnement automatisk blive forlænget med et år til en pris på 69,99$.<br>
+Efter afslutningen af den gratis prøveperiode vil dit abonnement automatisk blive forlænget med et år til en pris på 39,99$.<br>
 Betalingen vil blive trukket fra din Apple ID-konto efter bekræftelse af købet.</p>
 
 <p class="mb-4"><strong>3. Abonnementsstyring:</strong><br>
@@ -506,7 +506,7 @@ Hvis du har spørgsmål, bedes du kontakte os via supportsektionen i appen.</p>
     termsButtonLabel: "Käyttöehdot",
     termsTitle: "Käyttöehdot",
     downloadButtonLabel: "Lataa App Storesta",
-    footerCopyright: "© 2024 BreatheBook. Kaikki oikeudet pidätetään.",
+    footerCopyright: "© 2025 BreatheBook. Kaikki oikeudet pidätetään.",
     privacyContent: `
       <p class="mb-4">Luottamuksesi on meille tärkeää, ja pyrimme varmistamaan yksityisyytesi. Sovelluksemme toimii täysin paikallisesti laitteellasi eikä kerää, tallenna tai siirrä mitään käyttäjätietoja palvelimille tai kolmansille osapuolille.</p>
       <p class="mb-4">Emme käytä kolmannen osapuolen palveluita toimintasi analysointiin tai seuraamiseen. Kaikki tiedot, jotka syötät tai luot sovelluksessa, pysyvät yksinomaan laitteellasi.</p>
@@ -520,7 +520,7 @@ Hvis du har spørgsmål, bedes du kontakte os via supportsektionen i appen.</p>
 Tarjoamme 7 päivän ilmaisen kokeilujakson. Tänä aikana voit käyttää kaikkia sovelluksen ominaisuuksia ilman rajoituksia.</p>
 
 <p class="mb-4"><strong>2. Automaattinen tilaus:</strong><br>
-Ilmaisen kokeilujakson päätyttyä tilauksesi uusitaan automaattisesti vuodeksi hintaan 69,99$.<br>
+Ilmaisen kokeilujakson päätyttyä tilauksesi uusitaan automaattisesti vuodeksi hintaan 39,99$.<br>
 Maksu veloitetaan Apple ID -tililtäsi ostoksen vahvistamisen jälkeen.</p>
 
 <p class="mb-4"><strong>3. Tilauksen hallinta:</strong><br>
@@ -550,7 +550,7 @@ Jos sinulla on kysyttävää, ota yhteyttä sovelluksen tukiosion kautta.</p>
     termsButtonLabel: "Termini di Utilizzo",
     termsTitle: "Termini di Utilizzo",
     downloadButtonLabel: "Scarica da App Store",
-    footerCopyright: "© 2024 BreatheBook. Tutti i diritti riservati.",
+    footerCopyright: "© 2025 BreatheBook. Tutti i diritti riservati.",
     privacyContent: `
       <p class="mb-4">La vostra fiducia è importante per noi e ci impegniamo a garantire la vostra privacy. La nostra applicazione funziona completamente in locale sul vostro dispositivo e non raccoglie, memorizza o trasmette alcun dato utente a server o terze parti.</p>
       <p class="mb-4">Non utilizziamo servizi di terze parti per analizzare o tracciare la vostra attività. Tutti i dati che inserite o create nell'applicazione rimangono esclusivamente sul vostro dispositivo.</p>
@@ -564,7 +564,7 @@ Jos sinulla on kysyttävää, ota yhteyttä sovelluksen tukiosion kautta.</p>
 Offriamo un periodo di prova gratuito della durata di 7 giorni. Durante questo periodo, puoi utilizzare tutte le funzionalità dell'app senza alcuna limitazione.</p>
 
 <p class="mb-4"><strong>2. Abbonamento automatico:</strong><br>
-Alla fine del periodo di prova gratuito, il tuo abbonamento verrà automaticamente rinnovato per un anno al costo di 69,99$.<br>
+Alla fine del periodo di prova gratuito, il tuo abbonamento verrà automaticamente rinnovato per un anno al costo di 39,99$.<br>
 Il pagamento verrà addebitato sul tuo account Apple ID dopo la conferma dell'acquisto.</p>
 
 <p class="mb-4"><strong>3. Gestione dell'abbonamento:</strong><br>
@@ -594,7 +594,7 @@ Se hai domande, ti preghiamo di contattarci tramite la sezione di supporto dell'
     termsButtonLabel: "Termos de Uso",
     termsTitle: "Termos de Uso",
     downloadButtonLabel: "Baixar da App Store",
-    footerCopyright: "© 2024 BreatheBook. Todos os direitos reservados.",
+    footerCopyright: "© 2025 BreatheBook. Todos os direitos reservados.",
     privacyContent: `
       <p class="mb-4">A sua confiança é importante para nós, e esforçamo-nos para garantir a sua privacidade. A nossa aplicação funciona completamente de forma local no seu dispositivo e não recolhe, armazena ou transmite quaisquer dados do utilizador para servidores ou terceiros.</p>
       <p class="mb-4">Não utilizamos serviços de terceiros para análise ou rastreamento da sua atividade. Todos os dados que introduza ou crie na aplicação permanecem exclusivamente no seu dispositivo.</p>
@@ -608,7 +608,7 @@ Se hai domande, ti preghiamo di contattarci tramite la sezione di supporto dell'
 Oferecemos um período de teste gratuito de 7 dias. Durante esse tempo, você pode usar todas as funcionalidades do aplicativo sem quaisquer restrições.</p>
 
 <p class="mb-4"><strong>2. Assinatura automática:</strong><br>
-Após o término do período de teste gratuito, sua assinatura será automaticamente renovada por um ano com um custo de 69,99$.<br>
+Após o término do período de teste gratuito, sua assinatura será automaticamente renovada por um ano com um custo de 39,99$.<br>
 O pagamento será debitado da sua conta Apple ID após a confirmação da compra.</p>
 
 <p class="mb-4"><strong>3. Gerenciamento de assinatura:</strong><br>
@@ -638,7 +638,7 @@ Se você tiver dúvidas, entre em contato conosco através da seção de suporte
     termsButtonLabel: "Warunki Użytkowania",
     termsTitle: "Warunki Użytkowania",
     downloadButtonLabel: "Pobierz z App Store",
-    footerCopyright: "© 2024 BreatheBook. Wszelkie prawa zastrzeżone.",
+    footerCopyright: "© 2025 BreatheBook. Wszelkie prawa zastrzeżone.",
     privacyContent: `
       <p class="mb-4">Wasze zaufanie jest dla nas ważne i staramy się zapewnić Waszą prywatność. Nasza aplikacja działa całkowicie lokalnie na Waszym urządzeniu i nie zbiera, nie przechowuje ani nie przesyła żadnych danych użytkownika na serwery lub do stron trzecich.</p>
       <p class="mb-4">Nie używamy usług stron trzecich do analizy lub śledzenia Waszej aktywności. Wszystkie dane, które wprowadzacie lub tworzycie w aplikacji, pozostają wyłącznie na Waszym urządzeniu.</p>
@@ -681,7 +681,7 @@ Jeśli masz pytania, skontaktuj się z nami za pomocą sekcji wsparcia w aplikac
     termsButtonLabel: "Användarvillkor",
     termsTitle: "Användarvillkor",
     downloadButtonLabel: "Ladda ner från App Store",
-    footerCopyright: "© 2024 BreatheBook. Alla rättigheter förbehållna.",
+    footerCopyright: "© 2025 BreatheBook. Alla rättigheter förbehållna.",
     privacyContent: `
       <p class="mb-4">Er tillit är viktig för oss och vi strävar efter att säkerställa er integritet. Vår app fungerar helt lokalt på er enhet och samlar inte in, lagrar eller överför någon användardata till servrar eller tredje parter.</p>
       <p class="mb-4">Vi använder inte tredjepartstjänster för analys eller spårning av er aktivitet. All data som ni anger eller skapar i appen förblir endast på er enhet.</p>
@@ -695,7 +695,7 @@ Jeśli masz pytania, skontaktuj się z nami za pomocą sekcji wsparcia w aplikac
 Vi erbjuder en gratis provperiod på 7 dagar. Under denna tid kan du använda alla funktioner i appen utan några begränsningar.</p>
 
 <p class="mb-4"><strong>2. Automatisk prenumeration:</strong><br>
-Efter den kostnadsfria provperioden förnyas din prenumeration automatiskt för ett år med en avgift på 69,99$.<br>
+Efter den kostnadsfria provperioden förnyas din prenumeration automatiskt för ett år med en avgift på 39,99$.<br>
 Betalningen dras från ditt Apple ID-konto efter att köpet har bekräftats.</p>
 
 <p class="mb-4"><strong>3. Hantering av prenumeration:</strong><br>
@@ -725,7 +725,7 @@ Om du har några frågor, vänligen kontakta oss via supportavsnittet i appen.</
     termsButtonLabel: "เงื่อนไg��การใช้งาน",
     termsTitle: "เงื่อนไขการใช้งาน",
     downloadButtonLabel: "ดาวน์โหลดจาก App Store",
-    footerCopyright: "© 2024 BreatheBook. สงวนลิขสิทธิ์.",
+    footerCopyright: "© 2025 BreatheBook. สงวนลิขสิทธิ์.",
     privacyContent: `
       <p class="mb-4">ความไว้วางใจของคุณสำคัญสำหรับเรา และเรามุ่งมั่นที่จะรักษาความเป็นส่วนตัวของคุณ แอปพลิเคชันของc��ราทำงานแบบโลคอลบนอุปกรณ์ของคุณโดยสมบูรณ์ และไม่รวบรวม ไม่จัดเก็บ และไม่ส่งข้อมูลผู้ใช้ไปยังเซิร์ฟเวอร์หรือบุคc��ลk��ี่สาม</p>
       <p class="mb-4">เราไม่ใช้บริการของบุคคลที่สามในการวิเคราะห์หรือติดตามกิจกรรมของคุณ ข้อมูลทั้งหมดที่คุณป้อนหรือสร้างในแอปพลิเคชันจะยังคงอยู่บนอุปกรณ์ของคุณเท่านั้น</p>
@@ -769,7 +769,7 @@ Om du har några frågor, vänligen kontakta oss via supportavsnittet i appen.</
     termsButtonLabel: "Kullanım Şartları",
     termsTitle: "Kullanım Şartları",
     downloadButtonLabel: "App Store'dan İndir",
-    footerCopyright: "© 2024 BreatheBook. Tüm hakları saklıdır.",
+    footerCopyright: "© 2025 BreatheBook. Tüm hakları saklıdır.",
     privacyContent: `
       <p class="mb-4">Güveniniz bizim için önemlidir ve gizliliğinizi sağlamayı taahhüt ediyoruz. Uygulamamız tamamen cihazınızda yerel olarak çalışır ve kullanıcı verilerini sunuculara veya üçüncü taraflara toplamaz, saklamaz veya iletmez.</p>
       <p class="mb-4">Aktivitenizi analiz etmek veya izlemek için üçüncü taraf hizmetleri kullanmıyoruz. Uygulamada girdiğiniz veya oluşturduğunuz tüm veriler yalnızca cihazınızda kalır.</p>
@@ -813,7 +813,7 @@ Sorularınız varsa, lütfen uygulamadaki destek bölümünden bizimle iletişim
     termsButtonLabel: "Điều khoản sử dụng",
     termsTitle: "Điều khoản sử dụng",
     downloadButtonLabel: "Tải từ App Store",
-    footerCopyright: "© 2024 BreatheBook. Bảo lưu mọi quyền.",
+    footerCopyright: "© 2025 BreatheBook. Bảo lưu mọi quyền.",
     privacyContent: `
       <p class="mb-4">Sự tin tưởng của bạn rất quan trọng đối với chúng tôi, và chúng tôi cố gắng đảm bảo quyền riêng tư của bạn. Ứng dụng của chúng tôi hoạt động hoàn toàn cục bộ trên thiết bị của bạn và không thu thập, lưu trữ hoặc truyền bất kỳ dữ liệu người dùng nào đến máy chủ hoặc bên thứ ba.</p>
       <p class="mb-4">Chúng tôi không sử dụng các dịch vụ bên thứ ba để phân tích hoặc theo dõi hoạt động của bạn. Tất cả dữ liệu mà bạn nhập hoặc tạo trong ứng dụng đều chỉ được lưu trữ trên thiết bị của bạn.</p>
@@ -857,7 +857,7 @@ Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng t�
     termsButtonLabel: "Syarat Penggunaan",
     termsTitle: "Syarat Penggunaan",
     downloadButtonLabel: "Unduh dari App Store",
-    footerCopyright: "© 2024 BreatheBook. Semua hak dilindungi.",
+    footerCopyright: "© 2025 BreatheBook. Semua hak dilindungi.",
     privacyContent: `
       <p class="mb-4">Kepercayaan Anda penting bagi kami, dan kami berusaha memastikan privasi Anda. Aplikasi kami beroperasi sepenuhnya secara lokal di perangkat Anda dan tidak mengumpulkan, menyimpan, atau mengirimkan data pengguna apa pun ke server atau pihak ketiga.</p>
       <p class="mb-4">Kami tidak menggunakan layanan pihak ketiga untuk analitik atau melacak aktivitas Anda. Semua data yang Anda masukkan atau buat dalam aplikasi tetap eksklusif di perangkat Anda.</p>
