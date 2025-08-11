@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { languages } from '@/lib/translations';
 
-interface PrivacyModalProps {
+interface TermsModalProps {
   isOpen: boolean;
   onClose: () => void;
   selectedLanguage: string;
 }
 
-export function PrivacyModal({ isOpen, onClose, selectedLanguage }: PrivacyModalProps) {
+export function TermsModal({ isOpen, onClose, selectedLanguage }: TermsModalProps) {
   const currentLang = languages[selectedLanguage];
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export function PrivacyModal({ isOpen, onClose, selectedLanguage }: PrivacyModal
         <div className="p-6 border-b border-amber-500 border-opacity-20">
           <div className="flex items-center justify-between">
             <h3 className="text-2xl font-bold text-white">
-              {currentLang.privacyTitle}
+              {currentLang.termsTitle}
             </h3>
             <button 
               onClick={onClose}
@@ -65,7 +65,7 @@ export function PrivacyModal({ isOpen, onClose, selectedLanguage }: PrivacyModal
         <div className="p-6 overflow-y-auto max-h-96">
           <div 
             className="text-gray-300 leading-relaxed space-y-4"
-            dangerouslySetInnerHTML={{ __html: currentLang.privacyContent }}
+            dangerouslySetInnerHTML={{ __html: currentLang.termsContent }}
           />
         </div>
 
