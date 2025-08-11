@@ -1,0 +1,9 @@
+Integritetspolicy
+
+Ditt förtroende är viktigt för oss, och vi strävar efter att säkerställa din integritet. Vår app fungerar helt lokalt på din enhet och samlar inte in, lagrar eller överför några användardata till servrar eller tredje parter.
+
+Vi använder inte tredjepartstjänster för analys eller spårning av din aktivitet. All data som du anger eller skapar i appen förblir endast på din enhet.
+
+Om du har frågor eller förslag, vänligen kontakta oss.
+
+Tack för att du använder vår app!

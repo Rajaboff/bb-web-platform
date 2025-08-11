@@ -72,9 +72,10 @@ Preferred communication style: Simple, everyday language.
 - **nanoid**: Unique ID generation for client-side operations
 
 ### Language and Internationalization
-- **Multi-language Support**: Built-in translation system for English, Russian, Spanish, and French
+- **Multi-language Support**: Built-in translation system for 20 languages: English, Russian, Spanish, French, German, Japanese, Chinese, Korean, Arabic, Hindi, Danish, Finnish, Italian, Portuguese, Polish, Swedish, Thai, Turkish, Vietnamese, and Indonesian
 - **Custom Translation Engine**: Lightweight internationalization without external libraries
-- **Dynamic Legal Documents**: Privacy policy and terms of use with language-specific content
+- **Dynamic Legal Documents**: Privacy policy and terms of use with authentic content from user-provided files
+- **Right-to-Left Support**: Proper text direction for Arabic language content
 
 ### Premium Features (Added August 2025)
 - **Modern SaaS Design**: Contemporary dark theme inspired by Datafast and Aurix platforms

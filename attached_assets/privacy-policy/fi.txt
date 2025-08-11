@@ -1,0 +1,9 @@
+Tietosuojakäytäntö
+
+Luottamuksesi on meille tärkeää, ja pyrimme varmistamaan yksityisyytesi. Sovelluksemme toimii täysin paikallisesti laitteellasi eikä kerää, tallenna tai siirrä mitään käyttäjätietoja palvelimille tai kolmansille osapuolille.
+
+Emme käytä kolmannen osapuolen palveluita toimintasi analysointiin tai seuraamiseen. Kaikki tiedot, jotka syötät tai luot sovelluksessa, pysyvät yksinomaan laitteellasi.
+
+Jos sinulla on kysymyksiä tai ehdotuksia, ota meihin yhteyttä.
+
+Kiitos, että käytät sovellustamme!

@@ -1,0 +1,9 @@
+Privacy Policy
+
+Your trust is important to us, and we strive to ensure your privacy. Our application operates entirely locally on your device and does not collect, store, or transmit any user data to servers or third parties.
+
+We do not use third-party services for analytics or tracking your activity. All data that you enter or create in the application remains exclusively on your device.
+
+If you have any questions or suggestions, please contact us.
+
+Thank you for using our application!

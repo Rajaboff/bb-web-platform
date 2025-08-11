@@ -1,0 +1,9 @@
+Politique de confidentialité
+
+Votre confiance est importante pour nous, et nous nous efforçons de garantir votre confidentialité. Notre application fonctionne entièrement localement sur votre appareil et ne collecte, ne stocke et ne transmet aucune donnée utilisateur à des serveurs ou à des tiers.
+
+Nous n'utilisons pas de services tiers pour analyser ou suivre votre activité. Toutes les données que vous saisissez ou créez dans l'application restent exclusivement sur votre appareil.
+
+Si vous avez des questions ou des suggestions, veuillez nous contacter.
+
+Merci d'utiliser notre application !
