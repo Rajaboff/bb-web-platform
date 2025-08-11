@@ -2,7 +2,7 @@
 
 ## Overview
 
-BreatheBook is a mindful breathing application designed to provide users with inner peace and mental clarity through guided breathing exercises. The app features a premium minimalist landing page with black-pink gradient design, refined glass-morphism UI effects, multi-language support (English, Russian, Spanish, French), and dynamic legal document modals.
+BreatheBook is a mindful breathing application designed to provide users with inner peace and mental clarity through guided breathing exercises. The app features a premium minimalist landing page with modern dark gradient design inspired by contemporary SaaS platforms, advanced glass-morphism UI effects, multi-language support (English, Russian, Spanish, French), and separate legal document pages with dynamic URL routing.
 
 ## User Preferences
 
@@ -77,7 +77,8 @@ Preferred communication style: Simple, everyday language.
 - **Dynamic Legal Documents**: Privacy policy and terms of use with language-specific content
 
 ### Premium Features (Added August 2025)
-- **Minimalist Glass Design**: Refined glass-morphism effects with black-pink gradient themes
-- **Legal Compliance**: Dynamic privacy policy and terms of use modals  
+- **Modern SaaS Design**: Contemporary dark theme inspired by Datafast and Aurix platforms
+- **Advanced Glass Effects**: Sophisticated glass-morphism with multi-layered backgrounds
+- **Dynamic URL Routing**: Separate pages for privacy policy and terms with language parameters
 - **App Store Integration**: Download button with external link to App Store
-- **Clean Aesthetics**: Minimalist typography and subtle animations for premium user experience
+- **Clean Aesthetics**: Ultra-minimal typography and modern gradient backgrounds

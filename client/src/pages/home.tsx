@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { Download } from 'lucide-react';
+import { useLocation } from 'wouter';
 import { LanguageSelector } from '@/components/LanguageSelector';
-import { PrivacyModal } from '@/components/PrivacyModal';
-import { TermsModal } from '@/components/TermsModal';
 import { languages } from '@/lib/translations';
 
 export default function Home() {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
-  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
-  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+  const [location, setLocation] = useLocation();
 
   const currentLang = languages[selectedLanguage];
 
@@ -16,16 +14,22 @@ export default function Home() {
     window.open('https://apps.apple.com/app/breathebook', '_blank');
   };
 
+  const handlePrivacyClick = () => {
+    setLocation(`/privacy?lang=${selectedLanguage}`);
+  };
+
+  const handleTermsClick = () => {
+    setLocation(`/terms?lang=${selectedLanguage}`);
+  };
+
   return (
     <div className="min-h-screen premium-bg overflow-x-hidden">
       {/* Background Pattern */}
-      <div className="fixed inset-0 opacity-5">
-        <div 
-          className="absolute inset-0" 
-          style={{
-            backgroundImage: 'radial-gradient(circle at 25% 25%, #EC4899 0%, transparent 70%), radial-gradient(circle at 75% 75%, #DB2777 0%, transparent 70%)'
-          }}
-        />
+      <div className="fixed inset-0">
+        <div className="absolute inset-0 modern-gradient opacity-30" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-10" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500 rounded-full filter blur-3xl opacity-10" />
+        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-10" />
       </div>
 
       {/* Main Container */}
@@ -53,12 +57,19 @@ export default function Home() {
           </div>
 
           {/* App Title */}
-          <h1 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-extralight text-white mb-4 tracking-wide">
             BreatheBook
           </h1>
+          
+          {/* Tagline */}
+          <div className="mb-8">
+            <span className="text-sm font-light text-pink-400 bg-pink-500 bg-opacity-10 px-3 py-1 rounded-full border border-pink-500 border-opacity-20">
+              ✨ Mindful breathing made simple
+            </span>
+          </div>
 
           {/* App Subtitle */}
-          <p className="text-base text-gray-400 mb-10 leading-relaxed font-light">
+          <p className="text-base text-gray-400 mb-10 leading-relaxed font-light max-w-md mx-auto">
             {currentLang.appDescription}
           </p>
 
@@ -74,13 +85,13 @@ export default function Home() {
           {/* Legal Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
             <button 
-              onClick={() => setIsPrivacyModalOpen(true)}
+              onClick={handlePrivacyClick}
               className="glass-button rounded-xl px-6 py-3 text-white font-light text-sm flex-1"
             >
               {currentLang.privacyButtonLabel}
             </button>
             <button 
-              onClick={() => setIsTermsModalOpen(true)}
+              onClick={handleTermsClick}
               className="glass-button rounded-xl px-6 py-3 text-white font-light text-sm flex-1"
             >
               {currentLang.termsButtonLabel}
@@ -97,20 +108,6 @@ export default function Home() {
         </div>
 
       </div>
-
-      {/* Privacy Policy Modal */}
-      <PrivacyModal 
-        isOpen={isPrivacyModalOpen}
-        onClose={() => setIsPrivacyModalOpen(false)}
-        selectedLanguage={selectedLanguage}
-      />
-
-      {/* Terms Modal */}
-      <TermsModal 
-        isOpen={isTermsModalOpen}
-        onClose={() => setIsTermsModalOpen(false)}
-        selectedLanguage={selectedLanguage}
-      />
     </div>
   );
 }
