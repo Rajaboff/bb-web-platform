@@ -47,7 +47,7 @@ export function TermsModal({ isOpen, onClose, selectedLanguage }: TermsModalProp
       <div className="premium-glass rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden animate-fadeIn shadow-2xl">
         
         {/* Modal Header */}
-        <div className="p-6 border-b border-amber-500 border-opacity-20">
+        <div className="p-6 border-b border-pink-500 border-opacity-20">
           <div className="flex items-center justify-between">
             <h3 className="text-2xl font-bold text-white">
               {currentLang.termsTitle}

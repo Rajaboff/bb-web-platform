@@ -40,7 +40,7 @@ export function LanguageSelector({ selectedLanguage, onLanguageChange }: Languag
       <button
         ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
-        className="glass-button rounded-xl px-4 py-2 text-white text-sm font-medium flex items-center space-x-2 hover:scale-105 transition-all duration-300"
+        className="glass-button rounded-xl px-4 py-2 text-white text-sm font-light flex items-center space-x-2 transition-all duration-200"
       >
         <span>{currentLang.flag}</span>
         <span>{currentLang.code}</span>
@@ -61,7 +61,7 @@ export function LanguageSelector({ selectedLanguage, onLanguageChange }: Languag
           <button
             key={langCode}
             onClick={() => handleLanguageSelect(langCode)}
-            className={`w-full text-left px-4 py-3 text-white hover:bg-white hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200 ${
+            className={`w-full text-left px-4 py-3 text-white hover:bg-pink-500 hover:bg-opacity-10 flex items-center space-x-3 transition-colors duration-200 font-light ${
               index === 0 ? 'rounded-t-xl' : ''
             } ${
               index === Object.keys(languages).length - 1 ? 'rounded-b-xl' : ''
