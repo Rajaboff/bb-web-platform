@@ -34,7 +34,7 @@ export default function Privacy() {
       <div className="relative flex items-center justify-between p-6">
         <button 
           onClick={handleBack}
-          className="glass-button rounded-xl px-4 py-2 text-white font-light flex items-center space-x-2"
+          className="glass-button rounded-lg px-3 py-2 text-white font-light flex items-center space-x-2 text-sm"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
@@ -47,14 +47,14 @@ export default function Privacy() {
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-6 pb-12">
-        <div className="premium-glass rounded-3xl p-8 md:p-12">
-          <h1 className="text-3xl md:text-4xl font-light text-white mb-8 text-center">
+      <div className="max-w-3xl mx-auto px-6 pb-8">
+        <div className="premium-glass rounded-xl p-6 md:p-8">
+          <h1 className="text-2xl md:text-3xl font-light text-white mb-6 text-center">
             {currentLang.privacyTitle}
           </h1>
           
           <div 
-            className="text-gray-300 leading-relaxed space-y-6 text-sm md:text-base"
+            className="text-gray-300 leading-relaxed space-y-4 text-sm"
             dangerouslySetInnerHTML={{ __html: currentLang.privacyContent }}
           />
         </div>

@@ -44,12 +44,12 @@ export default function Home() {
         </div>
 
         {/* Main Content Card */}
-        <div className="glass-effect rounded-3xl p-10 md:p-14 max-w-lg w-full text-center">
+        <div className="glass-effect rounded-2xl p-8 md:p-10 max-w-md w-full text-center">
           
           {/* App Icon */}
-          <div className="mb-10 flex justify-center">
-            <div className="breathe-icon w-24 h-24 rounded-2xl flex items-center justify-center">
-              <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <div className="mb-6 flex justify-center">
+            <div className="breathe-icon w-20 h-20 rounded-xl flex items-center justify-center">
+              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C12 2 8 4 8 8C8 10 9 11 10 12C9 13 8 14 8 16C8 20 12 22 12 22C12 22 16 20 16 16C16 14 15 13 14 12C15 11 16 10 16 8C16 4 12 2 12 2Z" opacity="0.8"/>
                 <circle cx="12" cy="12" r="2" fill="white"/>
               </svg>
@@ -57,42 +57,42 @@ export default function Home() {
           </div>
 
           {/* App Title */}
-          <h1 className="text-4xl md:text-5xl font-extralight text-white mb-4 tracking-wide">
+          <h1 className="text-3xl md:text-4xl font-extralight text-white mb-3 tracking-wide">
             BreatheBook
           </h1>
           
           {/* Tagline */}
-          <div className="mb-8">
-            <span className="text-sm font-light text-pink-400 bg-pink-500 bg-opacity-10 px-3 py-1 rounded-full border border-pink-500 border-opacity-20">
+          <div className="mb-6">
+            <span className="text-xs font-light text-pink-400 bg-pink-500 bg-opacity-10 px-3 py-1 rounded-full border border-pink-500 border-opacity-20">
               ✨ Mindful breathing made simple
             </span>
           </div>
 
           {/* App Subtitle */}
-          <p className="text-base text-gray-400 mb-10 leading-relaxed font-light max-w-md mx-auto">
+          <p className="text-sm text-gray-400 mb-8 leading-relaxed font-light max-w-sm mx-auto">
             {currentLang.appDescription}
           </p>
 
           {/* Download Button */}
           <button 
             onClick={handleDownload}
-            className="download-button rounded-2xl px-8 py-4 text-white font-medium mb-8 w-full flex items-center justify-center space-x-3"
+            className="download-button rounded-xl px-6 py-3 text-white font-medium mb-6 w-full flex items-center justify-center space-x-2"
           >
-            <Download className="w-5 h-5" />
+            <Download className="w-4 h-4" />
             <span>{currentLang.downloadButtonLabel}</span>
           </button>
 
           {/* Legal Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-2">
             <button 
               onClick={handlePrivacyClick}
-              className="glass-button rounded-xl px-6 py-3 text-white font-light text-sm flex-1"
+              className="glass-button rounded-lg px-4 py-2 text-white font-light text-xs flex-1"
             >
               {currentLang.privacyButtonLabel}
             </button>
             <button 
               onClick={handleTermsClick}
-              className="glass-button rounded-xl px-6 py-3 text-white font-light text-sm flex-1"
+              className="glass-button rounded-lg px-4 py-2 text-white font-light text-xs flex-1"
             >
               {currentLang.termsButtonLabel}
             </button>
@@ -101,8 +101,8 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 text-center">
-          <p className="text-gray-500 text-sm">
+        <div className="mt-6 text-center">
+          <p className="text-gray-500 text-xs">
             {currentLang.footerCopyright}
           </p>
         </div>

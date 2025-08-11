@@ -69,41 +69,27 @@
 
 @layer utilities {
   .glass-effect {
-    background: linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.05), 
-      rgba(255, 255, 255, 0.02)
-    );
-    backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
   
   .premium-glass {
-    background: linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.06), 
-      rgba(255, 255, 255, 0.03)
-    );
-    backdrop-filter: blur(28px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
   .glass-button {
-    background: linear-gradient(135deg, 
-      rgba(236, 72, 153, 0.1), 
-      rgba(0, 0, 0, 0.3)
-    );
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(236, 72, 153, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.2s ease;
   }
   
   .glass-button:hover {
-    background: linear-gradient(135deg, 
-      rgba(236, 72, 153, 0.15), 
-      rgba(0, 0, 0, 0.4)
-    );
-    border-color: rgba(236, 72, 153, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
   }
   
   .download-button {
@@ -111,10 +97,8 @@
       rgba(99, 102, 241, 0.9), 
       rgba(168, 85, 247, 0.8)
     );
-    backdrop-filter: blur(10px);
     border: none;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
   }
   
   .download-button:hover {
@@ -122,17 +106,12 @@
       rgba(99, 102, 241, 1), 
       rgba(168, 85, 247, 0.9)
     );
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
-    transform: translateY(-1px);
   }
   
   .language-dropdown {
-    background: linear-gradient(135deg, 
-      rgba(0, 0, 0, 0.95), 
-      rgba(236, 72, 153, 0.05)
-    );
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(236, 72, 153, 0.15);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .breathe-icon {
@@ -140,7 +119,6 @@
       #EC4899, 
       #DB2777
     );
-    box-shadow: 0 0 30px rgba(236, 72, 153, 0.4);
   }
   
   .premium-bg {
