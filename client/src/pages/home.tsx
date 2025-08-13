@@ -23,6 +23,10 @@ export default function Home() {
     setLocation(`/terms?lang=${selectedLanguage}`);
   };
 
+  const handleContactsClick = () => {
+    setLocation(`/contacts?lang=${selectedLanguage}`);
+  };
+
   return (
     <div className="min-h-screen premium-bg overflow-x-hidden">
       {/* Background Pattern */}
@@ -95,6 +99,12 @@ export default function Home() {
               className="glass-button rounded-lg px-4 py-2 text-white font-light text-xs flex-1"
             >
               {currentLang.termsButtonLabel}
+            </button>
+            <button
+              onClick={handleContactsClick}
+              className="glass-button rounded-lg px-4 py-2 text-white font-light text-xs flex-1"
+            >
+              {currentLang.contactsButtonLabel}
             </button>
           </div>
         </div>

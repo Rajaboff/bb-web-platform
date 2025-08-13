@@ -7,10 +7,13 @@ export interface Language {
   privacyTitle: string;
   termsButtonLabel: string;
   termsTitle: string;
+  contactsButtonLabel: string;
+  contactsTitle: string;
   downloadButtonLabel: string;
   footerCopyright: string;
   privacyContent: string;
   termsContent: string;
+  contactsContent: string;
 }
 
 export const languages: Record<string, Language> = {
@@ -24,6 +27,8 @@ export const languages: Record<string, Language> = {
     privacyTitle: "Privacy Policy",
     termsButtonLabel: "Terms of Use",
     termsTitle: "Terms of Use",
+    contactsButtonLabel: "Contact Us",
+    contactsTitle: "Contact Us",
     downloadButtonLabel: "Download from App Store",
     footerCopyright: "© 2025 BreatheBook. All rights reserved.",
     privacyContent: `
@@ -58,6 +63,21 @@ If you have any questions, please contact us through the support section in the 
 <p>By using our application, you agree to these terms. Thank you for choosing our service!</p>
 
     `,
+    contactsContent: `
+      <p class="mb-4">We'd love to hear from you! If you have any questions, feedback, or need support, please don't hesitate to reach out to us.</p>
+      
+      <p class="mb-4">You can contact us via email at:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">We typically respond within 24 hours during business days.</p>
+      
+      <p>Thank you for using BreatheBook!</p>
+    `,
   },
   ru: {
     code: "RU",
@@ -69,6 +89,8 @@ If you have any questions, please contact us through the support section in the 
     privacyTitle: "Политика конфиденциальности",
     termsButtonLabel: "Условия использования",
     termsTitle: "Условия использования",
+    contactsButtonLabel: "Связаться с нами",
+    contactsTitle: "Связаться с нами",
     downloadButtonLabel: "Скачать из App Store",
     footerCopyright: "© 2025 BreatheBook. Все права защищены.",
     privacyContent: `
@@ -101,6 +123,21 @@ If you have any questions, please contact us through the support section in the 
 Если у вас возникли вопросы, пожалуйста, свяжитесь с нами через раздел поддержки в приложении.</p>
 
 <p>Используя наше приложение, вы соглашаетесь с данными условиями. Благодарим за выбор нашего сервиса!</p>
+    `,
+    contactsContent: `
+      <p class="mb-4">Мы будем рады услышать от вас! Если у вас есть вопросы, отзывы или вам нужна поддержка, пожалуйста, не стесняйтесь обращаться к нам.</p>
+      
+      <p class="mb-4">Вы можете связаться с нами по электронной почте:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Мы обычно отвечаем в течение 24 часов в рабочие дни.</p>
+      
+      <p>Спасибо за использование BreatheBook!</p>
     `,
   },
   es: {
@@ -146,7 +183,24 @@ Si tiene alguna pregunta, por favor contáctenos a través de la sección de sop
 
 <p>Al utilizar nuestra aplicación, usted acepta estos términos. ¡Gracias por elegir nuestro servicio!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Contáctanos",
+    contactsTitle: "Contáctanos",
+    contactsContent: `
+      <p class="mb-4">¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o necesitas ayuda, no dudes en contactarnos.</p>
+      
+      <p class="mb-4">Puedes contactarnos por correo electrónico en:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Normalmente respondemos dentro de las 24 horas en días laborables.</p>
+      
+      <p>¡Gracias por usar BreatheBook!</p>
+    `,},
   fr: {
     code: "FR",
     flag: "🇫🇷",
@@ -190,7 +244,24 @@ Si vous avez des questions, veuillez nous contacter via la section support de l'
 
 <p>En utilisant notre application, vous acceptez ces conditions. Merci de choisir notre service !</p>
     `,
-  },
+  
+    contactsButtonLabel: "Contactez-nous",
+    contactsTitle: "Contactez-nous",
+    contactsContent: `
+      <p class="mb-4">Nous aimerions avoir de vos nouvelles ! Si vous avez des questions, des commentaires ou besoin d'aide, n'hésitez pas à nous contacter.</p>
+      
+      <p class="mb-4">Vous pouvez nous contacter par e-mail à :</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Nous répondons généralement dans les 24 heures les jours ouvrables.</p>
+      
+      <p>Merci d'utiliser BreatheBook !</p>
+    `,},
   de: {
     code: "DE",
     flag: "🇩🇪",
@@ -234,7 +305,24 @@ Wenn Sie Fragen haben, kontaktieren Sie uns bitte über den Support-Bereich in d
 
 <p>Durch die Nutzung unserer App stimmen Sie diesen Bedingungen zu. Vielen Dank, dass Sie unseren Service gewählt haben!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Kontakt",
+    contactsTitle: "Kontakt",
+    contactsContent: `
+      <p class="mb-4">Wir würden gerne von Ihnen hören! Wenn Sie Fragen, Feedback oder Unterstützung benötigen, zögern Sie nicht, uns zu kontaktieren.</p>
+      
+      <p class="mb-4">Sie können uns per E-Mail erreichen unter:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Wir antworten normalerweise innerhalb von 24 Stunden an Werktagen.</p>
+      
+      <p>Vielen Dank für die Nutzung von BreatheBook!</p>
+    `,},
   ja: {
     code: "JA",
     flag: "🇯🇵",
@@ -277,7 +365,24 @@ Apple IDアカウント設定でサブスクリプションを管理し、自動
 
 <p>私たちのアプリを利用することで、これらの利用規約に同意したものとみなされます。私たちのサービスを選んでいただきありがとうございます！</p>
     `,
-  },
+  
+    contactsButtonLabel: "お問い合わせ",
+    contactsTitle: "お問い合わせ",
+    contactsContent: `
+      <p class="mb-4">お客様からのお声をお聞かせください！ご質問、フィードバック、サポートが必要な場合は、お気軽にお問い合わせください。</p>
+      
+      <p class="mb-4">以下のメールアドレスでお問い合わせいただけます：</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">営業日には通常24時間以内にお返事いたします。</p>
+      
+      <p>BreatheBookをご利用いただきありがとうございます！</p>
+    `,},
   zh: {
     code: "ZH",
     flag: "🇨🇳",
@@ -320,7 +425,24 @@ Apple IDアカウント設定でサブスクリプションを管理し、自動
 
 <p>使用我们的应用程序即表示您同意这些使用条款。感谢您选择我们的服务！</p>
     `,
-  },
+  
+    contactsButtonLabel: "联系我们",
+    contactsTitle: "联系我们",
+    contactsContent: `
+      <p class="mb-4">我们很乐意听到您的声音！如果您有任何问题、反馈或需要支持，请随时与我们联系。</p>
+      
+      <p class="mb-4">您可以通过以下电子邮件联系我们：</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">我们通常在营业日24小时内回复。</p>
+      
+      <p>感谢您使用BreatheBook！</p>
+    `,},
   ko: {
     code: "KO",
     flag: "🇰🇷",
@@ -363,7 +485,24 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
 
 <p>애플리케이션을 사용함으로써 귀하는 이 약관에 동의하는 것으로 간주됩니다. 저희 서비스를 선택해 주셔서 감사합니다!</p>
     `,
-  },
+  
+    contactsButtonLabel: "문의하기",
+    contactsTitle: "문의하기",
+    contactsContent: `
+      <p class="mb-4">여러분의 소식을 듣고 싶습니다! 질문, 피드백 또는 지원이 필요하시면 언제든지 연락해 주세요.</p>
+      
+      <p class="mb-4">다음 이메일로 연락하실 수 있습니다:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">영업일 기준 24시간 이내에 답변드립니다.</p>
+      
+      <p>BreatheBook을 사용해 주셔서 감사합니다!</p>
+    `,},
   ar: {
     code: "AR",
     flag: "🇸🇦",
@@ -407,7 +546,24 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
 <p dir="rtl">باستخدامك لتطبيقنا، فإنك توافق على هذه الشروط. شكرًا لاختيارك خدمتنا!</p>
 
     `,
-  },
+  
+    contactsButtonLabel: "اتصل بنا",
+    contactsTitle: "اتصل بنا",
+    contactsContent: `
+      <p class="mb-4" dir="rtl">نود أن نسمع منكم! إذا كان لديكم أي أسئلة أو ملاحظات أو تحتاجون إلى دعم، فلا تترددوا في التواصل معنا.</p>
+      
+      <p class="mb-4" dir="rtl">يمكنكم التواصل معنا عبر البريد الإلكتروني:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4" dir="rtl">نحن نرد عادةً خلال 24 ساعة في أيام العمل.</p>
+      
+      <p dir="rtl">شكراً لاستخدامكم BreatheBook!</p>
+    `,},
   hi: {
     code: "HI",
     flag: "🇮🇳",
@@ -451,7 +607,24 @@ Apple ID 계정 설정에서 구독을 관리하고 자동 갱신을 비활성�
 
 <p>हमारे ऐप का उपयोग करके, आप इन शर्तों से सहमत होते हैं। हमारे सेवा को चुनने के लिए धन्यवाद!</p>
     `,
-  },
+  
+    contactsButtonLabel: "संपर्क करें",
+    contactsTitle: "संपर्क करें",
+    contactsContent: `
+      <p class="mb-4">हम आपसे सुनना चाहेंगे! यदि आपके पास कोई प्रश्न, प्रतिक्रिया या सहायता की आवश्यकता है, तो कृपया हमसे संपर्क करने में संकोच न करें।</p>
+      
+      <p class="mb-4">आप हमसे ईमेल के माध्यम से संपर्क कर सकते हैं:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">हम आमतौर पर कार्य दिवसों में 24 घंटों के भीतर जवाब देते हैं।</p>
+      
+      <p>BreatheBook का उपयोग करने के लिए धन्यवाद!</p>
+    `,},
   da: {
     code: "DA",
     flag: "🇩🇰",
@@ -494,7 +667,24 @@ Hvis du har spørgsmål, bedes du kontakte os via supportsektionen i appen.</p>
 
 <p>Ved at bruge vores app accepterer du disse vilkår. Tak fordi du valgte vores service!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Kontakt os",
+    contactsTitle: "Kontakt os",
+    contactsContent: `
+      <p class="mb-4">Vi vil gerne høre fra dig! Hvis du har spørgsmål, feedback eller har brug for support, er du velkommen til at kontakte os.</p>
+      
+      <p class="mb-4">Du kan kontakte os via e-mail på:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Vi svarer typisk inden for 24 timer på hverdage.</p>
+      
+      <p>Tak fordi du bruger BreatheBook!</p>
+    `,},
   fi: {
     code: "FI",
     flag: "🇫🇮",
@@ -538,7 +728,24 @@ Jos sinulla on kysyttävää, ota yhteyttä sovelluksen tukiosion kautta.</p>
 
 <p>Käyttämällä sovellustamme hyväksyt nämä käyttöehdot. Kiitos, että valitsit palvelumme!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Ota yhteyttä",
+    contactsTitle: "Ota yhteyttä",
+    contactsContent: `
+      <p class="mb-4">Haluaisimme kuulla sinusta! Jos sinulla on kysymyksiä, palautetta tai tarvitset tukea, ota rohkeasti yhteyttä.</p>
+      
+      <p class="mb-4">Voit ottaa meihin yhteyttä sähköpostitse:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Vastaamme yleensä 24 tunnin sisällä arkipäivinä.</p>
+      
+      <p>Kiitos, että käytät BreatheBookia!</p>
+    `,},
   it: {
     code: "IT",
     flag: "🇮🇹",
@@ -582,7 +789,24 @@ Se hai domande, ti preghiamo di contattarci tramite la sezione di supporto dell'
 
 <p>Utilizzando la nostra applicazione, accetti questi termini. Grazie per aver scelto il nostro servizio!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Contattaci",
+    contactsTitle: "Contattaci",
+    contactsContent: `
+      <p class="mb-4">Ci piacerebbe sentire da te! Se hai domande, feedback o hai bisogno di supporto, non esitare a contattarci.</p>
+      
+      <p class="mb-4">Puoi contattarci via email a:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Rispondiamo di solito entro 24 ore nei giorni lavorativi.</p>
+      
+      <p>Grazie per aver utilizzato BreatheBook!</p>
+    `,},
   pt: {
     code: "PT",
     flag: "🇵🇹",
@@ -626,7 +850,24 @@ Se você tiver dúvidas, entre em contato conosco através da seção de suporte
 
 <p>Ao usar nosso aplicativo, você concorda com estes termos. Obrigado por escolher nosso serviço!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Entre em contato",
+    contactsTitle: "Entre em contato",
+    contactsContent: `
+      <p class="mb-4">Adoraríamos ouvir de você! Se você tem perguntas, feedback ou precisa de suporte, não hesite em nos contatar.</p>
+      
+      <p class="mb-4">Você pode nos contatar por e-mail em:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Normalmente respondemos dentro de 24 horas em dias úteis.</p>
+      
+      <p>Obrigado por usar o BreatheBook!</p>
+    `,},
   pl: {
     code: "PL",
     flag: "🇵🇱",
@@ -670,7 +911,24 @@ Jeśli masz pytania, skontaktuj się z nami za pomocą sekcji wsparcia w aplikac
 
 <p>Korzystając z naszej aplikacji, akceptujesz niniejsze warunki. Dziękujemy za wybór naszego serwisu!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Skontaktuj się",
+    contactsTitle: "Skontaktuj się",
+    contactsContent: `
+      <p class="mb-4">Chcielibyśmy usłyszeć od Was! Jeśli macie pytania, uwagi lub potrzebujecie wsparcia, nie wahajcie się z nami skontaktować.</p>
+      
+      <p class="mb-4">Możecie się z nami skontaktować e-mailem:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Zazwyczaj odpowiadamy w ciągu 24 godzin w dni robocze.</p>
+      
+      <p>Dziękujemy za korzystanie z BreatheBook!</p>
+    `,},
   sv: {
     code: "SV",
     flag: "🇸🇪",
@@ -713,7 +971,24 @@ Om du har några frågor, vänligen kontakta oss via supportavsnittet i appen.</
 
 <p>Genom att använda vår app godkänner du dessa villkor. Tack för att du väljer vår tjänst!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Kontakta oss",
+    contactsTitle: "Kontakta oss",
+    contactsContent: `
+      <p class="mb-4">Vi skulle gärna höra från dig! Om du har frågor, feedback eller behöver support, tveka inte att kontakta oss.</p>
+      
+      <p class="mb-4">Du kan kontakta oss via e-post på:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Vi svarar vanligtvis inom 24 timmar på vardagar.</p>
+      
+      <p>Tack för att du använder BreatheBook!</p>
+    `,},
   th: {
     code: "TH",
     flag: "🇹🇭",
@@ -757,7 +1032,24 @@ Om du har några frågor, vänligen kontakta oss via supportavsnittet i appen.</
 
 <p>การใช้แอปพลิเคชันของเราแสดงว่าคุณยอมรับข้อกำหนดเหล่านี้ ขอบคุณที่เลือกใช้บริการของเรา!</p>
     `,
-  },
+  
+    contactsButtonLabel: "ติดต่อเรา",
+    contactsTitle: "ติดต่อเรา",
+    contactsContent: `
+      <p class="mb-4">เราอยากได้ยินจากคุณ! หากคุณมีคำถาม ข้อเสนอแนะ หรือต้องการความช่วยเหลือ กรุณาติดต่อเรา</p>
+      
+      <p class="mb-4">คุณสามารถติดต่อเราได้ทางอีเมล:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">เรามักจะตอบกลับภายใน 24 ชั่วโมงในวันทำงาน</p>
+      
+      <p>ขอบคุณที่ใช้ BreatheBook!</p>
+    `,},
   tr: {
     code: "TR",
     flag: "🇹🇷",
@@ -801,7 +1093,24 @@ Sorularınız varsa, lütfen uygulamadaki destek bölümünden bizimle iletişim
 
 <p>Uygulamamızı kullanarak bu şartları kabul etmiş olursunuz. Hizmetimizi seçtiğiniz için teşekkür ederiz!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Bize ulaşın",
+    contactsTitle: "Bize ulaşın",
+    contactsContent: `
+      <p class="mb-4">Sizden haber almayı çok isteriz! Sorularınız, geri bildirimleriniz veya desteğe ihtiyacınız varsa, lütfen bizimle iletişime geçmekten çekinmeyin.</p>
+      
+      <p class="mb-4">Bize şu e-posta adresinden ulaşabilirsiniz:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Genellikle iş günlerinde 24 saat içinde yanıt veririz.</p>
+      
+      <p>BreatheBook'u kullandığınız için teşekkür ederiz!</p>
+    `,},
   vi: {
     code: "VI",
     flag: "🇻🇳",
@@ -845,7 +1154,24 @@ Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng t�
 
 <p>Bằng cách sử dụng ứng dụng của chúng tôi, bạn đồng ý với các điều khoản này. Cảm ơn bạn đã chọn dịch vụ của chúng tôi!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Liên hệ chúng tôi",
+    contactsTitle: "Liên hệ chúng tôi",
+    contactsContent: `
+      <p class="mb-4">Chúng tôi rất muốn nghe từ bạn! Nếu bạn có câu hỏi, phản hồi hoặc cần hỗ trợ, đừng ngần ngại liên hệ với chúng tôi.</p>
+      
+      <p class="mb-4">Bạn có thể liên hệ với chúng tôi qua email:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Chúng tôi thường phản hồi trong vòng 24 giờ vào các ngày làm việc.</p>
+      
+      <p>Cảm ơn bạn đã sử dụng BreatheBook!</p>
+    `,},
   id: {
     code: "ID",
     flag: "🇮🇩",
@@ -889,7 +1215,24 @@ Jika Anda memiliki pertanyaan, silakan hubungi kami melalui bagian dukungan di a
 
 <p>Dengan menggunakan aplikasi kami, Anda menyetujui syarat ini. Terima kasih telah memilih layanan kami!</p>
     `,
-  },
+  
+    contactsButtonLabel: "Hubungi kami",
+    contactsTitle: "Hubungi kami",
+    contactsContent: `
+      <p class="mb-4">Kami ingin mendengar dari Anda! Jika Anda memiliki pertanyaan, umpan balik, atau membutuhkan dukungan, jangan ragu untuk menghubungi kami.</p>
+      
+      <p class="mb-4">Anda dapat menghubungi kami melalui email di:</p>
+      
+      <div class="mb-6">
+        <a href="mailto:manu.rajaboff@gmail.com" class="text-pink-400 hover:text-pink-300 transition-colors text-lg font-medium">
+          manu.rajaboff@gmail.com
+        </a>
+      </div>
+      
+      <p class="mb-4">Kami biasanya merespons dalam 24 jam pada hari kerja.</p>
+      
+      <p>Terima kasih telah menggunakan BreatheBook!</p>
+    `,},
 };
 
 export const supportedLanguages = Object.keys(languages);
